@@ -1,0 +1,13 @@
+[
+  { "from": "router.create.vcloud", "to": "router.create.vcloud.done", "extra": "{ \"router_ip\":\"1.1.1.1\"}" },
+  { "from": "network.create.vcloud", "to": "network.create.vcloud.done"},
+  { "from": "instance.create.vcloud", "to": "instance.create.vcloud.done" },
+  { "from": "instance.update.vcloud", "to": "instance.update.vcloud.done" },
+  { "from": "instance.delete.vcloud", "to": "instance.delete.vcloud.done" },
+  { "from": "instance.power.vcloud", "to": "instance.power.vcloud.done" },
+  { "from": "firewall.create.vcloud", "to": "firewall.create.vcloud.done"},
+  { "from": "firewall.update.vcloud", "to": "firewall.update.vcloud.done" },
+  { "from": "nat.create.vcloud", "to": "nat.create.vcloud.done" },
+  { "from": "nat.update.vcloud", "to": "nat.update.vcloud.done" },
+  { "from": "execution.create.salt", "to": "execution.create.salt.error", "extra": "{ \"execution_status\":\"success\", \"execution_matched_instances\":\"a\", \"error\": { \"code\": \"22\", \"message\": \"upsu\" } }"  }
+]

@@ -1,0 +1,17 @@
+[
+  { "from": "router.create.fake", "to": "router.create.fake.done", "extra": "{ \"router_ip\":\"1.1.1.1\"}" },
+  { "from": "router.delete.fake", "to": "router.delete.fake.done" },
+  { "from": "network.create.fake", "to": "network.create.fake.done"},
+  { "from": "network.delete.fake", "to": "network.delete.fake.done" },
+  { "from": "instance.create.fake", "to": "instance.create.fake.done" },
+  { "from": "instance.update.fake", "to": "instance.update.fake.done" },
+  { "from": "instance.delete.fake", "to": "instance.delete.fake.done" },
+  { "from": "instance.power.fake", "to": "instance.power.fake.done" },
+  { "from": "firewall.create.fake", "to": "firewall.create.fake.done"},
+  { "from": "firewall.update.fake", "to": "firewall.update.fake.done" },
+  { "from": "firewall.delete.fake", "to": "firewall.delete.fake.done" },
+  { "from": "nat.create.fake", "to": "nat.create.fake.done" },
+  { "from": "nat.update.fake", "to": "nat.update.fake.done" },
+  { "from": "nat.delete.fake", "to": "nat.delete.fake.done" },
+  { "from": "execution.create.fake", "to": "execution.create.fake.done"  }
+]

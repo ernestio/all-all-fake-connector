@@ -1,0 +1,14 @@
+[
+  { "from": "create-router", "to": "provision-router-error", "extra": "{ \"error\": { \"code\": \"10\", \"message\": \"crash\"} }" },
+  { "from": "create-instance", "to": "vcloud-instance-created" },
+  { "from": "update-instance", "to": "vcloud-instance-updated" },
+  { "from": "delete-instance", "to": "vcloud-instance-deleted" },
+  { "from": "power-on-instance", "to": "vcloud-instance-powered-on" },
+  { "from": "create-nat", "to": "vcloud-nat-created" },
+  { "from": "update-nat", "to": "vcloud-nat-updated" },
+  { "from": "create-network", "to": "vcloud-network-created" },
+  { "from": "update-firewall", "to": "vcloud-firewall-updated" },
+  { "from": "create-firewall", "to": "vcloud-firewall-created" },
+  { "from": "create-loadbalancer", "to": "vcloud-loadbalancer-created" },
+  { "from": "update-loadbalancer", "to": "vcloud-loadbalancer-updated" }
+]
