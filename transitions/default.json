@@ -13,5 +13,17 @@
   { "from": "nat.create.fake", "to": "nat.create.fake.done" },
   { "from": "nat.update.fake", "to": "nat.update.fake.done" },
   { "from": "nat.delete.fake", "to": "nat.delete.fake.done" },
-  { "from": "execution.create.fake", "to": "execution.create.fake.done"  }
+	{ "from": "execution.create.fake", "to": "execution.create.fake.done"  },
+	{ "from": "network.create.fakeaws", "to": "network.create.fakeaws.done"},
+	{ "from": "network.delete.fakeaws", "to": "network.delete.fakeaws.done" },
+	{ "from": "instance.create.fakeaws", "to": "instance.create.fakeaws.done" },
+	{ "from": "instance.update.fakeaws", "to": "instance.update.fakeaws.done" },
+	{ "from": "instance.delete.fakeaws", "to": "instance.delete.fakeaws.done" },
+	{ "from": "instance.power.fakeaws", "to": "instance.power.fakeaws.done" },
+	{ "from": "firewall.create.fakeaws", "to": "firewall.create.fakeaws.done"},
+	{ "from": "firewall.update.fakeaws", "to": "firewall.update.fakeaws.done" },
+	{ "from": "firewall.delete.fakeaws", "to": "firewall.delete.fakeaws.done" },
+	{ "from": "nat.create.fakeaws", "to": "nat.create.fakeaws.done" },
+	{ "from": "nat.update.fakeaws", "to": "nat.update.fakeaws.done" },
+	{ "from": "nat.delete.fakeaws", "to": "nat.delete.fakeaws.done" }
 ]
