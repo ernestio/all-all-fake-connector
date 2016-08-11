@@ -35,7 +35,7 @@
 	{ "from": "instance.update.aws-fake", "to": "instance.update.aws-fake.done" },
 	{ "from": "instance.delete.aws-fake", "to": "instance.delete.aws-fake.done" },
 	{ "from": "instance.power.aws-fake", "to": "instance.power.aws-fake.done" },
-	{ "from": "firewall.create.aws-fake", "to": "firewall.create.aws-fake.done"},
+	{ "from": "firewall.create.aws-fake", "to": "firewall.create.aws-fake.done", "extra": "{ \"security_group_aws_id\":\"foo\"}"},
 	{ "from": "firewall.update.aws-fake", "to": "firewall.update.aws-fake.done" },
 	{ "from": "firewall.delete.aws-fake", "to": "firewall.delete.aws-fake.done" },
 	{ "from": "nat.create.aws-fake", "to": "nat.create.aws-fake.done" },
