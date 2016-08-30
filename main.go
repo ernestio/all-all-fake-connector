@@ -5,14 +5,14 @@
 package main
 
 import (
+	"encoding/json"
 	"flag"
 	"fmt"
 	"log"
 	"os"
 	"runtime"
 
-	"encoding/json"
-
+	ecc "github.com/ernestio/ernest-config-client"
 	"github.com/nats-io/nats"
 )
 
@@ -94,17 +94,8 @@ func main() {
 	trnPath := flag.String("transitions", "transitions/default.json", "path to json transitions")
 	flag.Parse()
 
-	if os.Getenv("NATS_URI") != "" {
-		natsURI = os.Getenv("NATS_URI")
-	} else {
-		natsURI = nats.DefaultURL
-	}
-
 	ts := getTransitions(*trnPath)
-	n, err := nats.Connect(natsURI)
-	if err != nil {
-		log.Panic(err)
-	}
+	n := ecc.NewConfig(os.Getenv("NATS_URI")).Nats()
 
 	n.Subscribe("*", func(m *nats.Msg) {
 		manage(n, m, ts)

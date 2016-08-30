@@ -7,4 +7,4 @@ WORKDIR /go/src/github.com/ernestio/all-all-fake-connector
 
 RUN make deps && go install
 
-ENTRYPOINT /go/bin/all-all-fake-connector
+ENTRYPOINT ./entrypoint.sh
