@@ -5,11 +5,11 @@ build:
 	go build -v ./...
 
 deps: dev-deps
-	go get -u github.com/nats-io/nats
-	go get -u github.com/ernestio/ernest-config-client
+	go get github.com/nats-io/nats
+	go get github.com/ernestio/ernest-config-client
 
 dev-deps:
-	go get -u github.com/golang/lint/golint
+	go get github.com/golang/lint/golint
 
 
 lint:
