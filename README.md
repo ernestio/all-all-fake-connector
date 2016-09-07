@@ -4,8 +4,8 @@ This library aims to be a fake responder for all vcloud microservices. It allows
 
 ## Build status
 
-* Master:  [![CircleCI](https://circleci.com/gh/ErnestIO/all-all-fake-connector/tree/master.svg?style=svg)](https://circleci.com/gh/ErnestIO/all-all-fake-connector/tree/master)
-* Develop: [![CircleCI](https://circleci.com/gh/ErnestIO/all-all-fake-connector/tree/develop.svg?style=svg)](https://circleci.com/gh/ErnestIO/all-all-fake-connector/tree/develop)
+* Master:  [![CircleCI](https://circleci.com/gh/ernestio/all-all-fake-connector/tree/master.svg?style=svg)](https://circleci.com/gh/ernestio/all-all-fake-connector/tree/master)
+* Develop: [![CircleCI](https://circleci.com/gh/ernestio/all-all-fake-connector/tree/develop.svg?style=svg)](https://circleci.com/gh/ernestio/all-all-fake-connector/tree/develop)
 
 ## Configuration
 
