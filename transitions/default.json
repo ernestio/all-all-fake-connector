@@ -42,5 +42,7 @@
 	{ "from": "firewall.delete.aws-fake", "to": "firewall.delete.aws-fake.done" },
 	{ "from": "nat.create.aws-fake", "to": "nat.create.aws-fake.done" },
 	{ "from": "nat.update.aws-fake", "to": "nat.update.aws-fake.done" },
-	{ "from": "nat.delete.aws-fake", "to": "nat.delete.aws-fake.done" }
+	{ "from": "nat.delete.aws-fake", "to": "nat.delete.aws-fake.done" },
+	{ "from": "vpc.create.aws-fake", "to": "vpc.create.aws-fake.done", "extra": "{\"vpc_id\":\"fakeaws\"}" },
+	{ "from": "vpc.delete.aws-fake", "to": "vpc.delete.aws-fake.done" }
 ]
