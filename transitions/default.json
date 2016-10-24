@@ -47,5 +47,8 @@
   { "from": "vpc.delete.aws-fake", "to": "vpc.delete.aws-fake.done" },
   { "from": "elb.create.aws-fake", "to": "elb.create.aws-fake.done", "extra": "{\"dns_name\":\"fake-dns-name\"}" },
   { "from": "elb.update.aws-fake", "to": "elb.update.aws-fake.done"},
-  { "from": "elb.delete.aws-fake", "to": "elb.delete.aws-fake.done"}
+  { "from": "elb.delete.aws-fake", "to": "elb.delete.aws-fake.done"},
+  { "from": "s3.create.aws-fake", "to": "s3.create.aws-fake.done"},
+  { "from": "s3.update.aws-fake", "to": "s3.update.aws-fake.done"},
+  { "from": "s3.delete.aws-fake", "to": "s3.delete.aws-fake.done"}
 ]
