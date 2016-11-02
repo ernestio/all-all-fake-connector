@@ -59,7 +59,7 @@ func manage(n *nats.Conn, m *nats.Msg, ts []Transition) {
 		}
 	}
 	fmt.Printf("%#v", current)
-	if &current != nil {
+	if &current != nil && current.To != "" && current.From != "" {
 
 		var x map[string]interface{}
 		err := json.Unmarshal(m.Data, &x)
