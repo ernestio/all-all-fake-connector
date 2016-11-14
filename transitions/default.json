@@ -1,5 +1,5 @@
 [
-  { "from": "router.create.vcloud-fake", "to": "router.create.vcloud-fake.done", "extra": "{ \"router_ip\":\"1.1.1.1\"}" },
+  { "from": "router.create.vcloud-fake", "to": "router.create.vcloud-fake.done", "extra": "{ \"ip\":\"1.1.1.1\"}" },
   { "from": "router.delete.vcloud-fake", "to": "router.delete.vcloud-fake.done" },
   { "from": "network.create.vcloud-fake", "to": "network.create.vcloud-fake.done" },
   { "from": "network.delete.vcloud-fake", "to": "network.delete.vcloud-fake.done" },
@@ -15,7 +15,7 @@
   { "from": "nat.delete.vcloud-fake", "to": "nat.delete.vcloud-fake.done" },
   { "from": "execution.create.vcloud-fake", "to": "execution.create.vcloud-fake.done"  },
   { "from": "bootstrap.create.vcloud-fake", "to": "bootstrap.create.vcloud-fake.done"  },
-  { "from": "router.create.fake", "to": "router.create.fake.done", "extra": "{ \"router_ip\":\"1.1.1.1\"}" },
+  { "from": "router.create.fake", "to": "router.create.fake.done", "extra": "{ \"ip\":\"1.1.1.1\"}" },
   { "from": "router.delete.fake", "to": "router.delete.fake.done" },
   { "from": "network.create.fake", "to": "network.create.fake.done" },
   { "from": "network.delete.fake", "to": "network.delete.fake.done" },
