@@ -1,25 +1,23 @@
-# VCLOUD FAKER
+# Ernest.io fake connector
 
-This library aims to be a fake responder for all vcloud microservices. It allows you to bypass all vcloud calls at the same time you can simulate errors.
+master :  [![CircleCI](https://circleci.com/gh/ernestio/all-all-fake-connector/tree/master.svg?style=svg)](https://circleci.com/gh/ernestio/all-all-fake-connector/tree/master) | develop: [![CircleCI](https://circleci.com/gh/ernestio/all-all-fake-connector/tree/develop.svg?style=svg)](https://circleci.com/gh/ernestio/all-all-fake-connector/tree/develop)
 
-## Build status
+This library aims to be a fake responder for all ernest.io providers. It allows you to bypass all external provider calls at the same time you can simulate errors.
 
-* Master:  [![CircleCI](https://circleci.com/gh/ernestio/all-all-fake-connector/tree/master.svg?style=svg)](https://circleci.com/gh/ernestio/all-all-fake-connector/tree/master)
-* Develop: [![CircleCI](https://circleci.com/gh/ernestio/all-all-fake-connector/tree/develop.svg?style=svg)](https://circleci.com/gh/ernestio/all-all-fake-connector/tree/develop)
 
 ## Configuration
 
-This software is based on a config.json file, where you define the transitions to bypass.
+This software is based on json file in order to determine the transitions it needs to respond to. The default file can be found at transitions/default.json, but you can simulate error environments with customized json files in that folder.
 
 ## Running it
 
-To run vcloud fakery:
+To run vcloud faker:
 
 ```
 NATS_URI=nats://localhost:4222 vcloud-fakery -transitions=transitions/default.json
 ```
 
-If no transitions config is passed in, the default transition will be loaded (default.json).
+If no transitions config is passed in, the default transition will be loaded (transitions/default.json).
 
 ## Contributing
 
