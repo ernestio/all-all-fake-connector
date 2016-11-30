@@ -50,5 +50,11 @@
   { "from": "elb.delete.aws-fake", "to": "elb.delete.aws-fake.done"},
   { "from": "s3.create.aws-fake", "to": "s3.create.aws-fake.done"},
   { "from": "s3.update.aws-fake", "to": "s3.update.aws-fake.done"},
-  { "from": "s3.delete.aws-fake", "to": "s3.delete.aws-fake.done"}
+  { "from": "s3.delete.aws-fake", "to": "s3.delete.aws-fake.done"},
+  { "from": "rds_cluster.create.aws-fake", "to": "rds_cluster.create.aws-fake.done", "extra": "{ \"endpoint\":\"rds-endpoint\"}" },
+  { "from": "rds_cluster.update.aws-fake", "to": "rds_cluster.update.aws-fake.done" },
+  { "from": "rds_cluster.delete.aws-fake", "to": "rds_cluster.delete.aws-fake.done" },
+  { "from": "rds_instance.create.aws-fake", "to": "rds_instance.create.aws-fake.done", "extra": "{ \"endpoint\":\"rds-endpoint\"}" },
+  { "from": "rds_instance.update.aws-fake", "to": "rds_instance.update.aws-fake.done" },
+  { "from": "rds_instance.delete.aws-fake", "to": "rds_instance.delete.aws-fake.done" }
 ]
