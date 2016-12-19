@@ -56,5 +56,7 @@
   { "from": "rds_cluster.delete.aws-fake", "to": "rds_cluster.delete.aws-fake.done" },
   { "from": "rds_instance.create.aws-fake", "to": "rds_instance.create.aws-fake.done", "extra": "{ \"endpoint\":\"rds-endpoint\"}" },
   { "from": "rds_instance.update.aws-fake", "to": "rds_instance.update.aws-fake.done" },
-  { "from": "rds_instance.delete.aws-fake", "to": "rds_instance.delete.aws-fake.done" }
+  { "from": "rds_instance.delete.aws-fake", "to": "rds_instance.delete.aws-fake.done" },
+  { "from": "ebs_volume.create.aws-fake", "to": "ebs_volume.create.aws-fake.done", "extra": "{ \"volume_aws_id\":\"volume-id\"}" },
+  { "from": "ebs_volume.delete.aws-fake", "to": "ebs_volume.delete.aws-fake.done" }
 ]
