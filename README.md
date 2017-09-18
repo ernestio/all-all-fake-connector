@@ -1,9 +1,9 @@
 # Ernest.io fake connector
 
-master :  [![CircleCI](https://circleci.com/gh/ernestio/all-all-fake-connector/tree/master.svg?style=svg)](https://circleci.com/gh/ernestio/all-all-fake-connector/tree/master) | develop: [![CircleCI](https://circleci.com/gh/ernestio/all-all-fake-connector/tree/develop.svg?style=svg)](https://circleci.com/gh/ernestio/all-all-fake-connector/tree/develop)
+master:  [![CircleCI](https://circleci.com/gh/ernestio/all-all-fake-connector/tree/master.svg?style=shield)](https://circleci.com/gh/ernestio/all-all-fake-connector/tree/master)  
+develop: [![CircleCI](https://circleci.com/gh/ernestio/all-all-fake-connector/tree/develop.svg?style=shield)](https://circleci.com/gh/ernestio/all-all-fake-connector/tree/develop)
 
 This library aims to be a fake responder for all ernest.io providers. It allows you to bypass all external provider calls at the same time you can simulate errors.
-
 
 ## Configuration
 
