@@ -16,20 +16,12 @@ import (
 	"github.com/nats-io/nats"
 )
 
-// Message is used to store any incoming messages
-type Message struct {
-	Type  string `json:"type"`
-	extra func() interface{}
-}
-
 // Transition is used to map a transitions arc, along with any extra information
 type Transition struct {
 	From  string
 	To    string
 	Extra string `json:"extra,omitempty"`
 }
-
-var natsURI string
 
 func getTransitions(path string) []Transition {
 	var keys []Transition
@@ -85,9 +77,11 @@ func manage(n *nats.Conn, m *nats.Msg, ts []Transition) {
 			fmt.Println("error:", err)
 		}
 		log.Println("In")
-		n.Publish(current.To, b)
+		err = n.Publish(current.To, b)
+		if err != nil {
+			log.Println(err)
+		}
 	}
-
 }
 
 func main() {
@@ -96,18 +90,22 @@ func main() {
 
 	ts := getTransitions(*trnPath)
 	n := ecc.NewConfig(os.Getenv("NATS_URI")).Nats()
+	h := handler{Nats: n}
 
-	n.Subscribe("*", func(m *nats.Msg) {
-		manage(n, m, ts)
-	})
+	subscriptions := []string{"*", "*.*", "*.*.*"}
+	for _, s := range subscriptions {
+		_, err := n.Subscribe(s, func(m *nats.Msg) {
+			manage(n, m, ts)
+		})
+		if err != nil {
+			log.Fatal(err)
+		}
+	}
 
-	n.Subscribe("*.*", func(m *nats.Msg) {
-		manage(n, m, ts)
-	})
-
-	n.Subscribe("*.*.*", func(m *nats.Msg) {
-		manage(n, m, ts)
-	})
+	_, err := n.Subscribe("federation.auth-fake", h.federationAuth)
+	if err != nil {
+		log.Fatal(err)
+	}
 
 	runtime.Goexit()
 }
