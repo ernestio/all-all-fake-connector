@@ -102,7 +102,7 @@ func main() {
 		}
 	}
 
-	_, err := n.Subscribe("federation.auth-fake", h.federationAuth)
+	_, err := n.Subscribe("federation-fake.auth", h.federationAuth)
 	if err != nil {
 		log.Fatal(err)
 	}
