@@ -564,6 +564,21 @@
         "extra": "{\"_state\":\"completed\",\"components\":null}"
     },
     {
+        "from": "route53.create.aws-fake",
+        "to": "route53.create.aws-fake.done",
+        "extra": "{ \"_state\":\"completed\"}"
+    },
+    {
+        "from": "route53.update.aws-fake",
+        "to": "route53.update.aws-fake.done",
+        "extra": "{ \"_state\":\"completed\"}"
+    },
+    {
+        "from": "route53.delete.aws-fake",
+        "to": "route53.delete.aws-fake.done",
+        "extra": "{ \"_state\":\"completed\"}"
+    },
+    {
         "from": "route53s.find.aws-fake",
         "to": "route53s.find.aws-fake.done",
         "extra": "{\"_state\":\"completed\",\"components\":[{\"_provider\":\"aws\",\"_component\":\"route53\",\"_component_id\":\"route53::rds-example.com.\",\"_state\":\"\",\"_action\":\"\",\"hosted_zone_id\":\"/hostedzone/Z2XAVKEF4KZFC8\",\"name\":\"rds-example.com.\",\"private\":false,\"records\":[{\"entry\":\"db.rds-example.com.\",\"type\":\"CNAME\",\"values\":[\"rds-test.cluster-cjqsqimreknj.eu-west-1.rds.amazonaws.com\"],\"ttl\":3600}],\"vpc_id\":null,\"tags\":{\"ernest.service\":\"tom-test\"},\"service\":\"\"}]}"
