@@ -13,7 +13,7 @@ import (
 	"runtime"
 
 	ecc "github.com/ernestio/ernest-config-client"
-	"github.com/nats-io/nats"
+	"github.com/nats-io/go-nats"
 )
 
 // Transition is used to map a transitions arc, along with any extra information
